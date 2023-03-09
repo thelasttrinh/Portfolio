@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$secondaryFont: "Inter";
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    font-family: $secondaryFont;
+
+    .nav__links{
+        justify-content: flex-end;
+    }
+    
+    .nav__a{
+        justify-content: flex-start;
+    }
+
+}

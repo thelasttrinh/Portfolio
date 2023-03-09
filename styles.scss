@@ -1,6 +1,43 @@
+//Modular imports for organization (Priority over imports!)
+@use 'nav';
+@use 'header';
+
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap');
+
+//Global variables
+$primaryBackground: #2c2a2a;
+$primaryFontColor: #ffffff;
+$primaryFont: "Cormorant";
+$secondaryFont: "Inter";
+
+
+//Global styling
+
 *{
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    background-color: $primaryBackground;
+    color:$primaryFontColor;
+    font-family: $primaryFont;
 }
+
+// Using grid box for mobile display
+
+.portfolio{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "body"
+    "section"
+    "section"
+    "section"
+    "footer"
+    ;
+    grid-gap: 10px;
+}
+
+
+
 
