@@ -1,0 +1,26 @@
+.section__about{
+
+    h2{
+        margin:10px
+    }
+    //Flexbox for img?
+    .section__profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //Profile sizing & positioning
+        img{
+            width: 300px;
+            height: 400px;
+            margin: 10px;;
+        }
+    }
+    //Center paragraph
+    .section__p{
+        text-align: center;
+    }
+
+}
+
+

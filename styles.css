@@ -151,6 +151,24 @@ header {
   grid-area: tag;
 }
 
+.section__about h2 {
+  margin: 10px;
+}
+.section__about .section__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__about .section__profile img {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+}
+.section__about .section__p {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
