@@ -169,6 +169,52 @@ header {
   text-align: center;
 }
 
+.section__experience {
+  display: flex;
+  flex-direction: column;
+}
+.section__experience h3 {
+  padding: 10px;
+}
+.section__experience ul {
+  padding: 10px;
+  border-bottom: 1px solid pink;
+}
+
+.section__interest {
+  display: flex;
+  flex-direction: column;
+}
+.section__interest h3 {
+  padding: 10px;
+}
+.section__interest ul {
+  padding: 10px;
+  border-bottom: 1px solid pink;
+}
+
+.section__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__contact a {
+  border: 1px solid pink;
+  text-align: center;
+  line-height: 6.1vh;
+  width: 200px;
+  height: 60px;
+}
+.section__contact h1 {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;

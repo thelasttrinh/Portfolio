@@ -3,7 +3,7 @@
     h2{
         margin:10px
     }
-    //Flexbox for img?
+    //Flexbox for img..., Need to double check
     .section__profile{
         display: flex;
         flex-direction: column;
@@ -23,4 +23,54 @@
 
 }
 
+//Flexbox for experience
+
+.section__experience{
+    display: flex;
+    flex-direction: column;
+    h3{
+        padding: 10px;
+    }
+
+    //TODO: Drop-down List!
+    ul{
+        padding: 10px;
+        border-bottom: 1px solid pink;
+    }
+}
+
+//Flexbox for interest
+
+.section__interest{
+    display: flex;
+    flex-direction: column;
+    h3{
+        padding: 10px;
+    }
+
+    //TODO: Drop-down List!
+    ul{
+        padding: 10px;
+        border-bottom: 1px solid pink;
+    }
+}
+
+//Flexbox for contacts
+
+.section__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+        border: 1px solid pink;
+        text-align: center;
+        line-height: 6.1vh;
+        width: 200px;
+        height: 60px;
+    }
+    h1{
+        padding: 10px;
+    }
+}
 
