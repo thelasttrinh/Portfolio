@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap');
+$primaryFont: "Cormorant";
 $secondaryFont: "Inter";
-nav{
+
+//Nav styles & separates name & links
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between ;
-    font-family: $secondaryFont;
-
+    justify-content: space-between;
+    // font-family: $secondaryFont;
     .nav__links{
         justify-content: flex-end;
+    }
+    .nav__links ul{
+        list-style-type: none;
     }
     
     .nav__a{
@@ -15,3 +20,8 @@ nav{
     }
 
 }
+
+nav *{
+    font-family: $secondaryFont;
+}
+

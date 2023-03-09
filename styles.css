@@ -1,22 +1,154 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap");
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Inter";
 }
 nav .nav__links {
   justify-content: flex-end;
 }
+nav .nav__links ul {
+  list-style-type: none;
+}
 nav .nav__a {
   justify-content: flex-start;
+}
+
+nav * {
+  font-family: "Inter";
 }
 
 header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.body__Project1 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project1 .body__Project1__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project1 .body__Project1__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project1 .body__Project1__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project1 .body__Project1__tag {
+  grid-area: tag;
+}
+
+.body__Project2 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project2 .body__Project2__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project2 .body__Project2__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project2 .body__Project2__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project2 .body__Project2__tag {
+  grid-area: tag;
+}
+
+.body__Project3 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project3 .body__Project3__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project3 .body__Project3__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project3 .body__Project3__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project3 .body__Project3__tag {
+  grid-area: tag;
+}
+
+.body__Project4 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project4 .body__Project4__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project4 .body__Project4__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project4 .body__Project4__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project4 .body__Project4__tag {
+  grid-area: tag;
+}
+
+.body__Project5 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project5 .body__Project5__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project5 .body__Project5__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project5 .body__Project5__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project5 .body__Project5__tag {
+  grid-area: tag;
+}
+
+.body__Project6 {
+  display: grid;
+  grid-template-areas: "img img img" "heading . a" "tag . .";
+  grid-gap: 5px;
+}
+.body__Project6 .body__Project6__img {
+  grid-area: img;
+  justify-self: center;
+}
+.body__Project6 .body__Project6__heading {
+  grid-area: heading;
+  justify-self: left;
+}
+.body__Project6 .body__Project6__a {
+  grid-area: a;
+  justify-self: end;
+}
+.body__Project6 .body__Project6__tag {
+  grid-area: tag;
 }
 
 * {
