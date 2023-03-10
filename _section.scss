@@ -1,59 +1,119 @@
 .section__about{
-
-    h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .section__h2{
         margin:10px
     }
+
     //Flexbox for img..., Need to double check
     .section__profile{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        order: 1;
         //Profile sizing & positioning
         img{
             width: 300px;
             height: 400px;
-            margin: 10px;;
+            margin: 10px;
         }
     }
-    //Center paragraph
+
+    //Center paragraph in mobile
     .section__p{
         text-align: center;
+        order: 2;
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .section__about{
+        display: flex;
+        flex-direction: row;
+        .section__left_side{
+            justify-content: flex-start;
+        }
     }
 
 }
 
 //Flexbox for experience
-
-.section__experience{
+.section__expint{
     display: flex;
     flex-direction: column;
-    h3{
-        padding: 10px;
+    
+    .section__experience{
+        display: flex;
+        flex-direction: column;
+        h3{
+            padding: 10px;
+        }
+    
+        //TODO: Drop-down List!
+        ul{
+            padding: 10px;
+            border-bottom: 1px solid pink;
+        }
     }
 
-    //TODO: Drop-down List!
-    ul{
-        padding: 10px;
-        border-bottom: 1px solid pink;
+    .section__interest{
+        display: flex;
+        flex-direction: column;
+        h3{
+            padding: 10px;
+        }
+    
+        //TODO: Drop-down List!
+        ul{
+            padding: 10px;
+            border-bottom: 1px solid pink;
+        }
     }
 }
 
-//Flexbox for interest
+// .section__experience{
+//     display: flex;
+//     flex-direction: column;
+//     h3{
+//         padding: 10px;
+//     }
 
-.section__interest{
-    display: flex;
-    flex-direction: column;
-    h3{
-        padding: 10px;
-    }
+//     //TODO: Drop-down List!
+//     ul{
+//         padding: 10px;
+//         border-bottom: 1px solid pink;
+//     }
+// }
 
-    //TODO: Drop-down List!
-    ul{
-        padding: 10px;
-        border-bottom: 1px solid pink;
+// //Flexbox for interest
+
+// .section__interest{
+//     display: flex;
+//     flex-direction: column;
+//     h3{
+//         padding: 10px;
+//     }
+
+//     //TODO: Drop-down List!
+//     ul{
+//         padding: 10px;
+//         border-bottom: 1px solid pink;
+//     }
+// }
+
+@media screen and (min-width: 769px){
+    .section__expint{
+        display: flex;
+        flex-direction: row;
+        .section__experience{
+            flex: 1;
+        }
+        .section__interest{
+            flex:1;
+        }
     }
 }
+
 
 //Flexbox for contacts
 
@@ -65,7 +125,7 @@
     a{
         border: 1px solid pink;
         text-align: center;
-        line-height: 6.1vh;
+        line-height: 6.5vh;
         width: 200px;
         height: 60px;
     }

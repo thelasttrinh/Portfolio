@@ -8,16 +8,18 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
-    //Set links to the right
-    .nav__links{
-        justify-content: flex-end;
-    }
-
     //TODO: List drop down icon!
 
-    //Removes bullet points
+    //Removes bullet points & makes it horizontal
     .nav__links ul{
+        display: flex;
+        list-style: none;
         list-style-type: none;
+    }
+
+    //Space out links
+    .nav__links ul li{
+        padding: 10px;
     }
     
     //Sets name to the right
