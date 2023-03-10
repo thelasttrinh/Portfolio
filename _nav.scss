@@ -8,24 +8,27 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
-    //
+    //Set links to the right
     .nav__links{
         justify-content: flex-end;
     }
 
-    //TODO: List drop down icon
+    //TODO: List drop down icon!
+
+    //Removes bullet points
     .nav__links ul{
         list-style-type: none;
     }
     
+    //Sets name to the right
     .nav__a{
         justify-content: flex-start;
     }
 
 }
 
-//Merging nav * breaks flexbox, so placed it outside
+//Workaround: Merging nav * breaks flexbox, so 
+//nav * has its own block for deter interference
 nav *{
     font-family: $secondaryFont;
 }
-

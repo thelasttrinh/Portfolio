@@ -1,7 +1,16 @@
 //Centers heading & wraps for mobile design
 header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-
+    align-items: center;
+    h1{
+        text-align: left;
+        font-size: 80px;
+        width: 300px;
+        overflow-wrap: normal;
+    }
+    p{
+        width: 300px;
+    }
 }
